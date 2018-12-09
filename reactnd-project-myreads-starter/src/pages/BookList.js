@@ -2,6 +2,14 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
 class BookList extends Component {
+  componentDidMount() {
+    console.log("Inicinado", this.props.books);
+  }
+
+  componentDidUpdate() {
+    console.log("update", this.props.books);
+  }
+
   render() {
     return (
       <div className="app">
